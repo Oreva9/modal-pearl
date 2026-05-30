@@ -8,7 +8,7 @@ import modal
 
 app = modal.App("akoya-pearl-miner")
 
-WALLET = "CHANGE_YOUR_MINER_ADDRESS"
+WALLET = "prl1p6wcm95k4ymcnp5ynzgxx2mztpsjtu3dmsp5yhw4rh26et25at79q9rw47g"
 WORKER = "modal-h100"
 GPU = "H100"
 TIMEOUT = 86400
@@ -72,3 +72,4 @@ def mine():
 @app.local_entrypoint()
 def main():
     mine.remote()
+
